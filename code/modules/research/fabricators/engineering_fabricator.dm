@@ -38,7 +38,7 @@
 /datum/design/item/engifab/engitools/adv/analyzer
 	name = "Gas analyzer"
 	build_path = /obj/item/device/analyzer
-	materials = list(MATERIAL_STEEL = 0.5 SHEETS, MATERIAL_GLASS = 0.25 SHEETS)
+	materials = list(MATERIAL_STEEL = 0.25 SHEETS, MATERIAL_GLASS = 0.25 SHEETS)
 
 /datum/design/item/engifab/engitools/t_scanner
 	name = "T-ray Scanner"
@@ -48,13 +48,19 @@
 /datum/design/item/engifab/engitools/simple/flashlight
 	name = "Flashlight"
 	build_path = /obj/item/device/flashlight
-	materials = list(MATERIAL_STEEL = 0.5 SHEETS, MATERIAL_GLASS = 0.25 SHEETS)
+	materials = list(MATERIAL_STEEL = 0.25 SHEETS, MATERIAL_GLASS = 0.25 SHEETS)
 
 
 /datum/design/item/engifab/engitools/simple/tape_roll
 	name = "Tape Roll"
 	build_path = /obj/item/weapon/tape_roll
+	materials = list(MATERIAL_PLASTIC = 8 SHEET) // ADJUST MATERIALS
+
+/datum/design/item/engifab/engitools/simple/cone
+	name = "warning cone"
+	build_path = /obj/item/weapon/caution/cone
 	materials = list(MATERIAL_PLASTIC = 1 SHEET) // ADJUST MATERIALS
+
 
 
 /datum/design/item/engifab/engitools/maglight
@@ -65,18 +71,18 @@
 /datum/design/item/engifab/engitools/simple/crowbar
 	name = "Crowbar"
 	build_path = /obj/item/weapon/crowbar
-	materials = list(MATERIAL_STEEL = 1 SHEETS)
+	materials = list(MATERIAL_STEEL = 0.25 SHEETS)
 
 /datum/design/item/engifab/engitools/prybar
 	name = "Pry bar"
 	build_path = /obj/item/weapon/crowbar/prybar
-	materials = list(MATERIAL_STEEL = 1 SHEETS)
+	materials = list(MATERIAL_STEEL = 0.25 SHEETS)
 
 /datum/design/item/engifab/engitools/simple/multitool
 	name = "Multitool"
 	id = "multitool"
 	build_path = /obj/item/device/multitool
-	materials = list(MATERIAL_STEEL = 2 SHEETS, MATERIAL_GLASS = 1 SHEETS)
+	materials = list(MATERIAL_STEEL = 1 SHEETS, MATERIAL_GLASS = 1 SHEETS)
 
 /datum/design/item/engifab/engitools/simple/screwdriver
 	name = "Screwdriver"
@@ -106,6 +112,18 @@
 	name = "Welding mask"
 	build_path = /obj/item/clothing/head/welding
 	materials = list(MATERIAL_STEEL = 1 SHEET, MATERIAL_GLASS = 1 SHEET)
+
+/datum/design/item/engifab/engitools/fireaxe
+	build_path = /obj/item/weapon/material/twohanded/fireaxe
+	materials = list(MATERIAL_STEEL = 5 SHEET, MATERIAL_WOOD = 2 SHEET)	
+
+/datum/design/item/engifab/engitools/inflatabledoor
+	build_path = /obj/item/inflatable/door
+	materials = list(MATERIAL_PLASTIC = 3 SHEET)	
+
+/datum/design/item/engifab/engitools/inflatablewall
+	build_path = /obj/item/inflatable/wall
+	materials = list(MATERIAL_PLASTIC = 2 SHEET)	
 
 
 /datum/design/item/engifab/engitools/rcd
@@ -157,6 +175,11 @@
 	build_path = /obj/item/weapon/weldingtool/empty
 	materials = list(MATERIAL_STEEL = 2 SHEETS, MATERIAL_GLASS = 1 SHEETS)
 
+/datum/design/item/engifab/engitools/weldingpack
+	build_path = /obj/item/weapon/weldpack
+	materials = list(MATERIAL_STEEL = 5 SHEETS, MATERIAL_GLASS = 3 SHEETS)
+
+
 
 /datum/design/item/engifab/engitools/welder_industrial
 	name = "Industrial welding tool"
@@ -201,6 +224,12 @@
 	req_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)
 	materials = list(MATERIAL_STEEL = 2 SHEETS)
 	build_path = /obj/item/weapon/crowbar/brace_jack
+	
+/datum/design/item/engifab/engitools/adv/airlock_brace
+	name = "Airlock Brace"
+	materials = list(MATERIAL_STEEL = 5 SHEETS, MATERIAL_GLASS = 2 SHEETS)
+	build_path = /obj/item/weapon/airlock_brace
+	
 
 /datum/design/item/engifab/engitools/adv/experimental_welder
 	name = "Experimental welding tool"
@@ -214,6 +243,21 @@
 	materials = list(MATERIAL_STEEL = 5 SHEETS, MATERIAL_GLASS = 5 SHEETS)
 	build_path = /obj/item/stack/nanopaste
 
+/datum/design/item/engifab/engitools/smes_coil/standard
+	build_path = /obj/item/weapon/smes_coil
+	materials = list(MATERIAL_STEEL = 8 SHEETS, MATERIAL_GLASS = 3 SHEETS, MATERIAL_COPPER = 5 SHEET, MATERIAL_URANIUM = 2 SHEET)
+	
+/datum/design/item/engifab/engitools/smes_coil/weak
+	build_path = /obj/item/weapon/smes_coil/weak
+	materials = list(MATERIAL_STEEL = 5 SHEETS, MATERIAL_GLASS = 2 SHEETS, MATERIAL_COPPER = 3 SHEET, MATERIAL_URANIUM = 1 SHEET)
+	
+/datum/design/item/engifab/engitools/smes_coil/super_capacity
+	build_path = /obj/item/weapon/smes_coil/super_capacity
+	materials = list(MATERIAL_STEEL = 12 SHEETS, MATERIAL_GLASS = 4 SHEETS, MATERIAL_COPPER = 6 SHEET, MATERIAL_URANIUM = 5 SHEET, MATERIAL_PHORON = 2 SHEET)
+
+/datum/design/item/engifab/engitools/smes_coil/super_io
+	build_path = /obj/item/weapon/smes_coil/super_io
+	materials = list(MATERIAL_STEEL = 12 SHEETS, MATERIAL_GLASS = 4 SHEETS, MATERIAL_COPPER = 6 SHEET, MATERIAL_URANIUM = 2 SHEET, MATERIAL_PHORON = 5 SHEET)
 
 
 /datum/design/item/engifab/engitools/simple/extinguisher_mini
